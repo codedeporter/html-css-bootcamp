@@ -1,0 +1,168 @@
+/* div {
+    background-color: blue;
+    width: 100px;
+}
+
+div:hover {
+    background: purple;
+}
+
+button {
+    background-color: orange;
+}
+
+button:focus {
+    border-radius: 10px;
+    background-color: green;
+}
+
+button:hover {
+    color: white;
+}
+
+button:active { 
+    color: grey;
+    background-color: yellow;
+}
+
+input:focus {
+    color: red;
+} */
+
+.btn {
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #fcad26;
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    border-radius: 20px;
+    box-shadow: 0 6px #efa424;
+}
+
+.btn:hover {
+    box-shadow: 0 4px #efa424;
+    top: 2px;
+}
+
+.btn:active {
+    box-shadow: 0 0 #efa424;
+    top: 6px;
+}
+
+/* Translating - Down and right are positive  takes vendor prefixes to ensure working on all browsers  autoprefixers available just paste your code*/
+/* .boxa{
+    transform: translateX(100px);
+}
+
+.boxb{
+    transform: translateY(100px);
+}
+
+.boxc{
+    transform: translateX(100px);
+}
+
+.boxd{
+    transform: translateY(100px);
+}
+
+.boxa:hover{
+    transform: translate(20px, 20px);
+} */
+/* Question:  How do I place the box in a certain spot before translating? */
+
+/* Scaling */
+
+.boxa{
+    transform-origin: left bottom;
+    transform:scale(10);
+}
+.boxb{
+    transform:scale(-.5);
+}
+.boxc{
+    background:blue;
+}
+.boxd{
+    transform: scale(20, 10);
+}
+/* by default, the image is scaled from its center, but we can change the origin of the scale */
+
+/* Rotations */
+
+.boxa {
+    transform: rotate(0.25turns);
+}
+
+/* Transition properties:
+transition-duration:1s;
+transition-property: 
+transition-timing-function:
+transition-delay:*/
+.boxc:hover{
+    background:#e74c3c;
+    border-radius: 50%;
+    transform-origin: top left;
+    transform: scale(2) rotate(45deg);
+    transition-duration: 5s, 1s;
+    /* transition-property: background, opacity, transform, all, color, opacity  Defined in font-size*/
+    transition-property: transform, border-radius;
+    transition-delay: 5ms, 10s;
+    transition-timing-function:cubic-bezier(1, 0, 0, 1);
+    /* easings.net or ceaser animation tool for possibilities*/
+
+    /* Transition shorthand you can have many transitions going on separated by commas*/
+    transition: background 1.5s ease-in 1;
+}
+    /* Represents transition-property transition-duration transition-timing-function transition delay */
+
+    /* Scale to zero when you want to hide something */
+
+    /* translate(-50%, -50) to center */
+
+    /* Multistate animations using keyframes */
+    
+    p{
+        animation-name: rainbowtext;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        /* how many times to animate 
+        
+        animation-fill-mode - state before/after
+        animation-direction - 0 - 100 or backward
+        animation-play-state - alternate or pause*/
+    }
+    @keyframes rainbowtext {
+        0%{
+            color:red;
+            font-size:20px;
+        }
+        25%{
+            color:orange;
+        }
+        50%{
+            color:yellow;
+            font-size: 40px;
+        }
+        75%{
+            color:green;
+        }
+        100%{
+            color: blue;
+            font-size: 20px;
+        }
+
+
+        
+    }
+

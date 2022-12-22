@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "css-project-starter-code",
+		"path": "../.."
+	},
+	{
+		"name": "advanced-web-developer-bootcamp-colt-steele",
+		"path": "../../../../Documents/projects/self-learn/advanced-web-developer-bootcamp-colt-steele"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "css-project-starter-code"
+  }
+}

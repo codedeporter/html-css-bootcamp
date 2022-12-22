@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grass{
+    background-color: green;
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+}
+.sky{
+    background-color: blue;
+    width: 1000px;
+    height: 250px;
+    animation-name: rainbowcycle;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+
+    
+    
+}
+.moon{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes rainbowcycle{
+    0%{
+        transform: translate(0, 0)
+    }
+    25%{
+        transform:translate(25px, 50px)
+    }
+    50%{
+        color:yellow;
+        font-size: 40px;
+    }
+    75%{
+        color:green;
+    }
+    100%{
+        color: blue;
+        font-size: 20px;
+    }
+}
